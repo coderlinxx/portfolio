@@ -17,7 +17,7 @@ const translations = {
     // About
     'about.title': '关于我',
     'about.subtitle': 'About Me',
-    'about.p1': '一名拥有 10 年以上经验的移动端开发工程师，以 iOS 开发为核心方向，精通 Objective-C，熟悉 Swift/SwiftUI，同时深耕 Vue 系前端技术领域。擅长原生与 Hybrid 混合开发，具备丰富的跨平台项目（React Native、Flutter）实战经验。',
+    'about.p1': '一名拥有 10 年以上经验的移动端开发工程师，以 iOS 开发为核心方向，精通 Objective-C，熟悉 Swift/SwiftUI，同时深耕 Vue 系前端技术领域。擅长原生与 Hybrid 混合开发，同时具备一定的跨平台项目（React Native、Flutter）实战经验。',
     'about.p2': '追求代码的简洁与优雅，注重产品细节和用户体验。热爱开源社区，乐于分享技术见解。在工作中始终保持对新技术的热情，不断探索移动端和前端领域的最佳实践。',
     'about.stat1': '年开发经验',
     'about.stat2': '完成项目',
@@ -80,7 +80,7 @@ const translations = {
     'contact.desc': '如果你有任何合作机会、技术交流或只是想打个招呼，都欢迎随时联系我。',
     'contact.email': '邮箱',
     'contact.location': '地点',
-    'contact.city': '中国',
+    'contact.city': '中国·北京',
 
     // Footer
     'footer.rights': '保留所有权利。',
@@ -101,7 +101,7 @@ const translations = {
 
     'about.title': 'About Me',
     'about.subtitle': 'About Me',
-    'about.p1': 'A mobile development engineer with 10+ years of experience, focused on iOS as the core direction. Proficient in Objective-C with solid Swift/SwiftUI skills, while deeply engaged in Vue-based frontend development. Experienced in native & hybrid development, with hands-on cross-platform (React Native, Flutter) project experience.',
+    'about.p1': 'A mobile development engineer with 10+ years of experience, focused on iOS as the core direction. Proficient in Objective-C with solid Swift/SwiftUI skills, while deeply engaged in Vue-based frontend development. Experienced in native & hybrid development, with some cross-platform (React Native, Flutter) project experience.',
     'about.p2': 'Pursuing clean and elegant code, focusing on product details and user experience. Passionate about open source community and sharing technical insights. Always maintaining enthusiasm for new technologies and exploring best practices in mobile and frontend development.',
     'about.stat1': 'Years Experience',
     'about.stat2': 'Projects Done',
@@ -159,7 +159,7 @@ const translations = {
     'contact.desc': 'Whether you have a collaboration opportunity, want to discuss tech, or just say hello — feel free to reach out anytime.',
     'contact.email': 'Email',
     'contact.location': 'Location',
-    'contact.city': 'China',
+    'contact.city': 'Beijing, China',
 
     'footer.rights': 'All rights reserved.',
     'footer.built': 'Built with HTML / CSS / JavaScript',
