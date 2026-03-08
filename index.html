@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="iOS & 前端开发者个人简介">
+  <title>林祥兴 — iOS & 前端开发者</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">LXX</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link" data-i18n="nav.about">关于我</a>
+        <a href="#skills" class="nav-link" data-i18n="nav.skills">技能</a>
+        <a href="#projects" class="nav-link" data-i18n="nav.projects">项目</a>
+        <a href="#experience" class="nav-link" data-i18n="nav.experience">经历</a>
+        <a href="#blog" class="nav-link" data-i18n="nav.blog">文章</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">联系</a>
+      </div>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="切换语言">EN</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-avatar">
+          <div class="avatar-placeholder">
+            <svg viewBox="0 0 120 120" fill="none"><circle cx="60" cy="45" r="22" fill="currentColor" opacity="0.15"/><ellipse cx="60" cy="95" rx="35" ry="22" fill="currentColor" opacity="0.1"/></svg>
+          </div>
+        </div>
+        <h1 class="hero-name" data-i18n="hero.name">林祥兴</h1>
+        <p class="hero-title">
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor">|</span>
+        </p>
+        <p class="hero-desc" data-i18n="hero.desc">热衷于用代码创造优雅的用户体验</p>
+        <div class="hero-links">
+          <a href="https://github.com/" class="hero-link" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="mailto:your@email.com" class="hero-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于我 -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title animate-in" data-i18n="about.title">关于我</h2>
+      <p class="section-subtitle animate-in" data-i18n="about.subtitle">About Me</p>
+      <div class="about-content">
+        <div class="about-text animate-in">
+            <p data-i18n="about.p1">一名拥有 10 年以上经验的移动端开发工程师，以 iOS 开发为核心方向，精通 Objective-C，熟悉 Swift/SwiftUI，同时深耕 Vue 系前端技术领域。擅长原生与 Hybrid 混合开发，具备丰富的跨平台项目（React Native、Flutter）实战经验。</p>
+          <p data-i18n="about.p2">追求代码的简洁与优雅，注重产品细节和用户体验。热爱开源社区，乐于分享技术见解。在工作中始终保持对新技术的热情，不断探索移动端和前端领域的最佳实践。</p>
+        </div>
+        <div class="about-stats animate-in">
+          <div class="stat-item">
+            <span class="stat-number" data-count="10">0</span>
+            <span class="stat-plus">+</span>
+            <span class="stat-label" data-i18n="about.stat1">年开发经验</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="20">0</span>
+            <span class="stat-plus">+</span>
+            <span class="stat-label" data-i18n="about.stat2">完成项目</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="10">0</span>
+            <span class="stat-plus">+</span>
+            <span class="stat-label" data-i18n="about.stat3">技术栈</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技能 -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title animate-in" data-i18n="skills.title">技能</h2>
+      <p class="section-subtitle animate-in" data-i18n="skills.subtitle">Skills</p>
+      <div class="skills-grid">
+        <!-- iOS 开发 -->
+        <div class="skill-category animate-in">
+          <div class="skill-category-header">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="skill-icon"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <h3 data-i18n="skills.ios">iOS 开发</h3>
+            <span class="skill-badge" data-i18n="skills.primary">主方向</span>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Objective-C</span><span>95%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>UIKit</span><span>92%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Runtime / RunLoop</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Swift / SwiftUI</span><span>78%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Core Data / FMDB</span><span>82%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Xcode</span>
+            <span class="tag">CocoaPods</span>
+            <span class="tag">Instruments</span>
+            <span class="tag">Charles</span>
+            <span class="tag">Hybrid（JS Bridge）</span>
+            <span class="tag">React Native</span>
+            <span class="tag">Flutter</span>
+          </div>
+        </div>
+        <!-- 前端开发 -->
+        <div class="skill-category animate-in">
+          <div class="skill-category-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="skill-icon"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <h3 data-i18n="skills.frontend">前端开发</h3>
+            <span class="skill-badge secondary" data-i18n="skills.secondary">辅方向</span>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Vue 2 / Vue 3</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript / TypeScript</span><span>82%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>React</span><span>72%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML / CSS</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>小程序开发</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Vuex / Pinia</span>
+            <span class="tag">Element UI</span>
+            <span class="tag">Vant</span>
+            <span class="tag">Webpack</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">uni-app</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 项目 -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title animate-in" data-i18n="projects.title">项目经历</h2>
+      <p class="section-subtitle animate-in" data-i18n="projects.subtitle">Projects</p>
+      <div class="project-filters animate-in">
+        <button class="filter-btn active" data-filter="all" data-i18n="projects.all">全部</button>
+        <button class="filter-btn" data-filter="ios" data-i18n="projects.ios">iOS</button>
+        <button class="filter-btn" data-filter="web" data-i18n="projects.web">Web</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card animate-in" data-category="ios">
+          <div class="project-image">
+            <div class="project-placeholder ios">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="12" y="4" width="24" height="40" rx="4"/><circle cx="24" cy="38" r="2"/><line x1="18" y1="8" x2="30" y2="8"/></svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 data-i18n="projects.p1.name">智慧生活 App</h3>
+            <p data-i18n="projects.p1.desc">一款集成智能家居控制、健康管理、生活服务的综合性 iOS 应用，服务超过 10 万用户。</p>
+            <div class="project-tags">
+              <span class="tag">Objective-C</span>
+              <span class="tag">UIKit</span>
+              <span class="tag">Core Data</span>
+              <span class="tag">JS Bridge</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" data-i18n="projects.viewMore">查看详情</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card animate-in" data-category="ios">
+          <div class="project-image">
+            <div class="project-placeholder ios">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="12" y="4" width="24" height="40" rx="4"/><circle cx="24" cy="38" r="2"/><line x1="18" y1="8" x2="30" y2="8"/></svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 data-i18n="projects.p2.name">金融理财助手</h3>
+            <p data-i18n="projects.p2.desc">提供实时行情、资产管理、投资分析等功能的金融类 App，注重数据安全与性能优化。</p>
+            <div class="project-tags">
+              <span class="tag">Objective-C</span>
+              <span class="tag">UIKit</span>
+              <span class="tag">FMDB</span>
+              <span class="tag">AFNetworking</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" data-i18n="projects.viewMore">查看详情</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card animate-in" data-category="web">
+          <div class="project-image">
+            <div class="project-placeholder web">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="8" width="40" height="28" rx="3"/><line x1="4" y1="16" x2="44" y2="16"/><circle cx="8" cy="12" r="1.5"/><circle cx="13" cy="12" r="1.5"/><circle cx="18" cy="12" r="1.5"/><line x1="16" y1="40" x2="32" y2="40"/><line x1="24" y1="36" x2="24" y2="40"/></svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 data-i18n="projects.p3.name">企业管理后台</h3>
+            <p data-i18n="projects.p3.desc">基于 React + Ant Design 的企业级中后台管理系统，包含权限管理、数据可视化等模块。</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Ant Design</span>
+              <span class="tag">ECharts</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" data-i18n="projects.viewMore">查看详情</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card animate-in" data-category="web">
+          <div class="project-image">
+            <div class="project-placeholder web">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="8" width="40" height="28" rx="3"/><line x1="4" y1="16" x2="44" y2="16"/><circle cx="8" cy="12" r="1.5"/><circle cx="13" cy="12" r="1.5"/><circle cx="18" cy="12" r="1.5"/><line x1="16" y1="40" x2="32" y2="40"/><line x1="24" y1="36" x2="24" y2="40"/></svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 data-i18n="projects.p4.name">电商 H5 商城</h3>
+            <p data-i18n="projects.p4.desc">面向移动端的电商 H5 应用，支持商品浏览、购物车、在线支付，使用 Vue 3 构建。</p>
+            <div class="project-tags">
+              <span class="tag">Vue 3</span>
+              <span class="tag">Vant</span>
+              <span class="tag">Pinia</span>
+              <span class="tag">uni-app</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" data-i18n="projects.viewMore">查看详情</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 工作经历 -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title animate-in" data-i18n="exp.title">工作经历</h2>
+      <p class="section-subtitle animate-in" data-i18n="exp.subtitle">Experience</p>
+      <div class="timeline">
+        <div class="timeline-item animate-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 data-i18n="exp.e1.company">某科技有限公司</h3>
+              <span class="timeline-date" data-i18n="exp.e1.date">2022 — 至今</span>
+            </div>
+            <p class="timeline-role" data-i18n="exp.e1.role">高级 iOS 开发工程师</p>
+            <p class="timeline-desc" data-i18n="exp.e1.desc">负责核心 App 的架构设计与开发，主导 OC 项目向 Swift 渐进式迁移，推动 Hybrid 混合开发方案落地，优化应用性能和用户体验。参与团队代码规范制定和技术选型。</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 data-i18n="exp.e2.company">某互联网公司</h3>
+              <span class="timeline-date" data-i18n="exp.e2.date">2020 — 2022</span>
+            </div>
+            <p class="timeline-role" data-i18n="exp.e2.role">iOS 开发工程师 / 前端开发</p>
+            <p class="timeline-desc" data-i18n="exp.e2.desc">负责多款 iOS 应用的 Objective-C 开发与维护，同时参与 Vue 管理后台、H5 活动页及小程序等前端项目开发。</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 data-i18n="exp.e3.company">某软件公司</h3>
+              <span class="timeline-date" data-i18n="exp.e3.date">2015 — 2020</span>
+            </div>
+            <p class="timeline-role" data-i18n="exp.e3.role">初级 iOS 开发工程师</p>
+            <p class="timeline-desc" data-i18n="exp.e3.desc">参与公司主力产品的 iOS 端开发，负责功能模块的实现与 Bug 修复，积累了扎实的 UIKit 开发经验。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 文章 -->
+  <section class="section" id="blog">
+    <div class="container">
+      <h2 class="section-title animate-in" data-i18n="blog.title">技术文章</h2>
+      <p class="section-subtitle animate-in" data-i18n="blog.subtitle">Blog</p>
+      <div class="blog-grid">
+        <a href="#" class="blog-card animate-in">
+          <div class="blog-meta">
+            <span class="blog-date">2026-02-15</span>
+            <span class="blog-tag">SwiftUI</span>
+          </div>
+          <h3 data-i18n="blog.b1.title">SwiftUI 动画系统深度解析</h3>
+          <p data-i18n="blog.b1.desc">探索 SwiftUI 中的隐式动画、显式动画和过渡动画的实现原理与最佳实践。</p>
+          <span class="blog-read" data-i18n="blog.readMore">阅读全文 &rarr;</span>
+        </a>
+        <a href="#" class="blog-card animate-in">
+          <div class="blog-meta">
+            <span class="blog-date">2026-01-20</span>
+            <span class="blog-tag">Architecture</span>
+          </div>
+          <h3 data-i18n="blog.b2.title">iOS 项目架构演进：从 MVC 到 TCA</h3>
+          <p data-i18n="blog.b2.desc">分享我们团队在大型 iOS 项目中从 MVC 逐步演进到 The Composable Architecture 的实践经验。</p>
+          <span class="blog-read" data-i18n="blog.readMore">阅读全文 &rarr;</span>
+        </a>
+        <a href="#" class="blog-card animate-in">
+          <div class="blog-meta">
+            <span class="blog-date">2025-12-08</span>
+            <span class="blog-tag">React</span>
+          </div>
+          <h3 data-i18n="blog.b3.title">React 性能优化实战指南</h3>
+          <p data-i18n="blog.b3.desc">从 useMemo、useCallback 到虚拟列表，总结前端项目中常见的性能优化手段。</p>
+          <span class="blog-read" data-i18n="blog.readMore">阅读全文 &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title animate-in" data-i18n="contact.title">联系我</h2>
+      <p class="section-subtitle animate-in" data-i18n="contact.subtitle">Get In Touch</p>
+      <div class="contact-content animate-in">
+        <p class="contact-desc" data-i18n="contact.desc">如果你有任何合作机会、技术交流或只是想打个招呼，都欢迎随时联系我。</p>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+            <h4 data-i18n="contact.email">邮箱</h4>
+            <a href="mailto:your@email.com">your@email.com</a>
+          </div>
+          <div class="contact-card">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <h4>GitHub</h4>
+            <a href="https://github.com/" target="_blank" rel="noopener">github.com/yourname</a>
+          </div>
+          <div class="contact-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <h4 data-i18n="contact.location">地点</h4>
+            <span data-i18n="contact.city">中国</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 <span data-i18n="hero.name">林祥兴</span>. <span data-i18n="footer.rights">保留所有权利。</span></p>
+      <p class="footer-sub" data-i18n="footer.built">使用 HTML / CSS / JavaScript 构建</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
